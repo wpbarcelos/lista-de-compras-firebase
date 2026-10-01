@@ -69,3 +69,26 @@ if (getApps().length === 0) {
 
 export const db = getFirestore(app);
 ```
+
+## Referências
+
+Documentação oficial (em inglês; o site do Firebase tem opção de idioma em português no rodapé):
+
+**Firestore**
+- [Visão geral do Firestore](https://firebase.google.com/docs/firestore)
+- [Primeiros passos (criar o banco)](https://firebase.google.com/docs/firestore/quickstart)
+- [Modelo de dados: coleções e documentos](https://firebase.google.com/docs/firestore/data-model)
+- [Create e Update: adicionar e atualizar dados](https://firebase.google.com/docs/firestore/manage-data/add-data)
+- [Read: ler dados](https://firebase.google.com/docs/firestore/query-data/get-data)
+- [Read em tempo real com `onSnapshot`](https://firebase.google.com/docs/firestore/query-data/listen)
+- [Ordenar e limitar dados (`orderBy`, `limit`)](https://firebase.google.com/docs/firestore/query-data/order-limit-data)
+- [Delete: excluir dados](https://firebase.google.com/docs/firestore/manage-data/delete-data)
+- [Regras de segurança](https://firebase.google.com/docs/firestore/security/get-started)
+- [Preços e cota gratuita](https://firebase.google.com/docs/firestore/pricing)
+- [Referência da API JavaScript (`firebase/firestore`)](https://firebase.google.com/docs/reference/js/firestore)
+
+**Configuração**
+- [Adicionar o Firebase a um projeto JavaScript](https://firebase.google.com/docs/web/setup)
+- [Usando o Firebase no Expo](https://docs.expo.dev/guides/using-firebase/)
+- [Variáveis de ambiente no Expo (`EXPO_PUBLIC_`)](https://docs.expo.dev/guides/environment-variables/)
+- [Variáveis de ambiente no Vite (`VITE_`)](https://vite.dev/guide/env-and-mode)
