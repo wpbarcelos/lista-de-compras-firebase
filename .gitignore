@@ -1,0 +1,7 @@
+node_modules
+dist
+
+# credenciais do Firebase
+.env
+.env.local
+.env.*.local

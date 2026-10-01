@@ -1,0 +1,172 @@
+/* Estilo simples inspirado no Bootstrap, em tons de verde */
+:root {
+  --verde: #1b7a3d;
+  --verde-escuro: #145c2e;
+  --verde-claro: #e8f5ec;
+  --vermelho: #dc3545;
+  --cinza: #6c757d;
+  --borda: #dee2e6;
+  --fundo: #f4f7f5;
+  --texto: #212529;
+  --raio: 0.375rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.5;
+}
+
+/* Barra superior */
+.navbar {
+  background: var(--verde);
+  color: #fff;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Cartão */
+.card {
+  background: #fff;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+/* Formulário */
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.form-control {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--verde);
+  box-shadow: 0 0 0 0.2rem rgba(27, 122, 61, 0.25);
+}
+
+/* Botões */
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: var(--raio);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.6rem;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background: var(--verde);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--verde-escuro);
+}
+
+.btn-outline-primary {
+  background: transparent;
+  color: var(--verde);
+  border-color: var(--verde);
+}
+
+.btn-outline-primary:hover {
+  background: var(--verde);
+  color: #fff;
+}
+
+.btn-outline-danger {
+  background: transparent;
+  color: var(--vermelho);
+  border-color: var(--vermelho);
+}
+
+.btn-outline-danger:hover {
+  background: var(--vermelho);
+  color: #fff;
+}
+
+/* Lista */
+.list-group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--borda);
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--borda);
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.list-group-item:hover {
+  background: var(--verde-claro);
+}
+
+.list-group-item input[type="checkbox"] {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--verde);
+  cursor: pointer;
+}
+
+.list-group-item .nome {
+  flex: 1;
+}
+
+.list-group-item.comprado .nome {
+  text-decoration: line-through;
+  color: var(--cinza);
+}
+
+.lista-vazia {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--cinza);
+}
